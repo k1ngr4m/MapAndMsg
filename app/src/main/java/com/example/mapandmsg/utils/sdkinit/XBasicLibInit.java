@@ -19,10 +19,10 @@ package com.example.mapandmsg.utils.sdkinit;
 
 import android.app.Application;
 
-import com.xuexiang.mapandmsg.MyApplication;
-import com.xuexiang.mapandmsg.core.BaseActivity;
-import com.xuexiang.mapandmsg.utils.TokenUtils;
-import com.xuexiang.mapandmsg.utils.XToastUtils;
+import com.example.mapandmsg.MyApplication;
+import com.example.mapandmsg.core.BaseActivity;
+import com.example.mapandmsg.utils.TokenUtils;
+import com.example.mapandmsg.utils.XToastUtils;
 import com.xuexiang.xaop.XAOP;
 import com.xuexiang.xhttp2.XHttpSDK;
 import com.xuexiang.xpage.PageConfig;

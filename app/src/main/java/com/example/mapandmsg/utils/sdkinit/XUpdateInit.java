@@ -20,10 +20,10 @@ package com.example.mapandmsg.utils.sdkinit;
 import android.app.Application;
 import android.content.Context;
 
-import com.xuexiang.mapandmsg.MyApplication;
-import com.xuexiang.mapandmsg.utils.update.CustomUpdateDownloader;
-import com.xuexiang.mapandmsg.utils.update.CustomUpdateFailureListener;
-import com.xuexiang.mapandmsg.utils.update.XHttpUpdateHttpServiceImpl;
+import com.example.mapandmsg.MyApplication;
+import com.example.mapandmsg.utils.update.CustomUpdateDownloader;
+import com.example.mapandmsg.utils.update.CustomUpdateFailureListener;
+import com.example.mapandmsg.utils.update.XHttpUpdateHttpServiceImpl;
 import com.xuexiang.xupdate.XUpdate;
 import com.xuexiang.xupdate.utils.UpdateUtils;
 

@@ -19,7 +19,7 @@ package com.example.mapandmsg.utils.update;
 
 import androidx.annotation.NonNull;
 
-import com.xuexiang.mapandmsg.utils.XToastUtils;
+import com.example.mapandmsg.utils.XToastUtils;
 import com.xuexiang.xhttp2.XHttp;
 import com.xuexiang.xhttp2.XHttpSDK;
 import com.xuexiang.xhttp2.callback.DownloadProgressCallBack;

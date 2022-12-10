@@ -13,6 +13,9 @@ buildscript {
         classpath 'com.github.xuexiangjys.XRouter:xrouter-plugin:1.1.0'
         classpath 'com.android.tools.build:gradle:3.4.0'
         classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.3'
+        classpath 'com.github.xuexiangjys.XAOP:xaop-plugin:1.1.0'
+        //美团多渠道打包
+        classpath 'com.meituan.android.walle:plugin:1.1.6'
     }
 }
 

@@ -20,7 +20,7 @@ package com.example.mapandmsg.utils;
 import android.content.Context;
 
 import com.umeng.analytics.MobclickAgent;
-import com.xuexiang.mapandmsg.activity.LoginActivity;
+import com.example.mapandmsg.activity.LoginActivity;
 import com.xuexiang.xutil.app.ActivityUtils;
 import com.xuexiang.xutil.common.StringUtils;
 

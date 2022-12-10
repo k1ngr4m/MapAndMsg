@@ -25,7 +25,7 @@ import android.text.TextUtils;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.xuexiang.mapandmsg.utils.Utils;
+import com.example.mapandmsg.utils.Utils;
 import com.xuexiang.xui.widget.dialog.DialogLoader;
 import com.xuexiang.xupdate.XUpdate;
 

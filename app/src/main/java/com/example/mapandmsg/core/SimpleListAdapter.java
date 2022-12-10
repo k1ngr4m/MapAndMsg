@@ -21,7 +21,7 @@ import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
 
-import com.xuexiang.mapandmsg.R;
+import com.example.mapandmsg.R;
 import com.xuexiang.xui.adapter.listview.BaseListAdapter;
 import com.xuexiang.xutil.common.StringUtils;
 

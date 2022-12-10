@@ -17,7 +17,7 @@
 
 package com.example.mapandmsg.utils.update;
 
-import com.xuexiang.mapandmsg.utils.XToastUtils;
+import com.example.mapandmsg.utils.XToastUtils;
 import com.xuexiang.xupdate.entity.UpdateError;
 import com.xuexiang.xupdate.listener.OnUpdateFailureListener;
 

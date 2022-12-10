@@ -20,8 +20,8 @@ package com.example.mapandmsg.utils;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.adapter.entity.NewInfo;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.adapter.entity.NewInfo;
 import com.xuexiang.xaop.annotation.MemoryCache;
 import com.xuexiang.xui.adapter.simple.AdapterItem;
 import com.xuexiang.xui.utils.ResUtils;

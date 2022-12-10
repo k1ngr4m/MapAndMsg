@@ -25,9 +25,9 @@ import androidx.annotation.NonNull;
 import com.meituan.android.walle.WalleChannelReader;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.commonsdk.UMConfigure;
-import com.xuexiang.mapandmsg.BuildConfig;
-import com.xuexiang.mapandmsg.MyApplication;
-import com.xuexiang.mapandmsg.utils.SettingUtils;
+import com.example.mapandmsg.BuildConfig;
+import com.example.mapandmsg.MyApplication;
+import com.example.mapandmsg.utils.SettingUtils;
 
 /**
  * UMeng 统计 SDK初始化

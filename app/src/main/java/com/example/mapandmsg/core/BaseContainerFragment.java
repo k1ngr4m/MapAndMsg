@@ -17,8 +17,8 @@
 
 package com.example.mapandmsg.core;
 
-import static com.xuexiang.mapandmsg.core.SimpleListAdapter.KEY_SUB_TITLE;
-import static com.xuexiang.mapandmsg.core.SimpleListAdapter.KEY_TITLE;
+import static com.example.mapandmsg.core.SimpleListAdapter.KEY_SUB_TITLE;
+import static com.example.mapandmsg.core.SimpleListAdapter.KEY_TITLE;
 
 import android.content.res.Configuration;
 import android.view.View;
