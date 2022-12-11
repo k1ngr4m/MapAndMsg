@@ -23,6 +23,9 @@ import android.graphics.Color;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,18 +37,18 @@ import com.amap.api.maps.AMapUtils;
 import com.amap.api.maps.model.LatLng;
 import com.codingending.library.FairySearchView;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.adapter.base.broccoli.BroccoliSimpleDelegateAdapter;
-import com.xuexiang.mapandmsg.adapter.base.delegate.SimpleDelegateAdapter;
-import com.xuexiang.mapandmsg.adapter.base.delegate.SingleDelegateAdapter;
-import com.xuexiang.mapandmsg.amap.MyNowPosition;
-import com.xuexiang.mapandmsg.core.BaseFragment;
-import com.xuexiang.mapandmsg.fragment.CallBack;
-import com.xuexiang.mapandmsg.fragment.Thread.ThreadPool;
-import com.xuexiang.mapandmsg.fragment.newInfo.ShowNewInfoFragment;
-import com.xuexiang.mapandmsg.leancloud.PraiseList;
-import com.xuexiang.mapandmsg.utils.XToastUtils;
-import com.xuexiang.mapandmsg.widget.EditSpinnerDialog;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.adapter.base.broccoli.BroccoliSimpleDelegateAdapter;
+import com.example.mapandmsg.adapter.base.delegate.SimpleDelegateAdapter;
+import com.example.mapandmsg.adapter.base.delegate.SingleDelegateAdapter;
+import com.example.mapandmsg.amap.MyNowPosition;
+import com.example.mapandmsg.core.BaseFragment;
+import com.example.mapandmsg.fragment.CallBack;
+import com.example.mapandmsg.fragment.Thread.ThreadPool;
+import com.example.mapandmsg.fragment.newInfo.ShowNewInfoFragment;
+import com.example.mapandmsg.leancloud.PraiseList;
+import com.example.mapandmsg.utils.XToastUtils;
+import com.example.mapandmsg.widget.EditSpinnerDialog;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xpage.enums.CoreAnim;
 import com.xuexiang.xui.adapter.recyclerview.RecyclerViewHolder;
@@ -187,6 +190,11 @@ public class NewsFragment extends BaseFragment implements CallBack.OnRefreshList
         return R.layout.fragment_news;
     }
 
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
+    }
+
     /**
      * 初始化控件
      */
@@ -194,7 +202,7 @@ public class NewsFragment extends BaseFragment implements CallBack.OnRefreshList
     protected void initViews() {
         getData();
         //VirtualLayout是一个针对RecyclerView的LayoutManager扩展, 主要提供一整套布局方案和布局间的组件复用的问题。
-        VirtualLayoutManager virtualLayoutManager = new VirtualLayoutManager(Objects.requireNonNull(getContext()));
+        VirtualLayoutManager virtualLayoutManager = new VirtualLayoutManager(requireContext());
         recyclerView.setLayoutManager(virtualLayoutManager);
         //简言之就是，你可以给RecyclerView设置一个ViewHolder的对象池，这个池称为RecycledViewPool，这个对象池可以节省你创建ViewHolder的开销，更能避免GC。即便你不给它设置，它也会自己创建一个。
         RecyclerView.RecycledViewPool viewPool = new RecyclerView.RecycledViewPool();

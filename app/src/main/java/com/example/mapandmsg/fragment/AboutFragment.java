@@ -17,10 +17,13 @@
 
 package com.example.mapandmsg.fragment;
 
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.core.BaseFragment;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.core.BaseFragment;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xutil.app.AppUtils;
 
@@ -47,6 +50,11 @@ public class AboutFragment extends BaseFragment {
     @Override
     protected int getLayoutId() {
         return R.layout.fragment_about;
+    }
+
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
     }
 
     @Override

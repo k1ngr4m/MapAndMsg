@@ -148,7 +148,6 @@ public class SearchViewActivity extends AppCompatActivity implements PoiSearchTa
                 }
             }
         };
-
         DelegateAdapter delegateAdapter = new DelegateAdapter(virtualLayoutManager);
         delegateAdapter.addAdapter(mPoiListAdapter);
         mRecyclerView.setAdapter(delegateAdapter);

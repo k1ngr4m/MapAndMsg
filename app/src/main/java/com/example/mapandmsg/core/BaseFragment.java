@@ -61,6 +61,8 @@ public abstract class BaseFragment extends XPageFragment {
         return TitleUtils.addTitleBarDynamic((ViewGroup) getRootView(), getPageTitle(), v -> popToBack());
     }
 
+    protected abstract int getLayoutId();
+
     @Override
     protected void initListeners() {
 

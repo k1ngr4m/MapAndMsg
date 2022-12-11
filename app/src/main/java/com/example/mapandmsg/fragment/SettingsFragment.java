@@ -17,10 +17,14 @@
 
 package com.example.mapandmsg.fragment;
 
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.core.BaseFragment;
-import com.xuexiang.mapandmsg.utils.TokenUtils;
-import com.xuexiang.mapandmsg.utils.XToastUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.core.BaseFragment;
+import com.example.mapandmsg.utils.TokenUtils;
+import com.example.mapandmsg.utils.XToastUtils;
 import com.xuexiang.xaop.annotation.SingleClick;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xui.widget.dialog.DialogLoader;
@@ -53,6 +57,11 @@ public class SettingsFragment extends BaseFragment implements SuperTextView.OnSu
     @Override
     protected int getLayoutId() {
         return R.layout.fragment_settings;
+    }
+
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
     }
 
     @Override

@@ -1,8 +1,12 @@
 package com.example.mapandmsg.fragment.profile;
 
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.core.BaseFragment;
-import com.xuexiang.mapandmsg.fragment.CallBack;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.core.BaseFragment;
+import com.example.mapandmsg.fragment.CallBack;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xui.widget.textview.supertextview.SuperTextView;
 
@@ -32,6 +36,11 @@ public class AccountFragment extends BaseFragment implements
     @Override
     protected int getLayoutId() {
         return R.layout.fragment_account;
+    }
+
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
     }
 
     @Override

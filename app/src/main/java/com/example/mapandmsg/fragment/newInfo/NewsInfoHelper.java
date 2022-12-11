@@ -18,7 +18,7 @@
 package com.example.mapandmsg.fragment.newInfo;
 
 import com.luck.picture.lib.entity.LocalMedia;
-import com.xuexiang.mapandmsg.adapter.entity.NewInfo;
+import com.example.mapandmsg.adapter.entity.NewInfo;
 
 import org.jetbrains.annotations.NotNull;
 

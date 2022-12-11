@@ -17,7 +17,7 @@
 
 package com.example.mapandmsg.utils;
 
-import static com.xuexiang.mapandmsg.core.webview.AgentWebFragment.KEY_URL;
+import static com.example.mapandmsg.core.webview.AgentWebFragment.KEY_URL;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -42,8 +42,8 @@ import com.luck.picture.lib.PictureSelectionModel;
 import com.luck.picture.lib.PictureSelector;
 import com.luck.picture.lib.config.PictureConfig;
 import com.luck.picture.lib.config.PictureMimeType;
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.core.webview.AgentWebActivity;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.core.webview.AgentWebActivity;
 import com.xuexiang.xui.utils.ResUtils;
 import com.xuexiang.xui.widget.dialog.DialogLoader;
 import com.xuexiang.xui.widget.dialog.materialdialog.DialogAction;

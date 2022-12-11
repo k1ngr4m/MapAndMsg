@@ -19,7 +19,9 @@ package com.example.mapandmsg.fragment;
 
 import android.graphics.Color;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.example.mapandmsg.R;
 import com.example.mapandmsg.activity.MainActivity;
@@ -83,7 +85,7 @@ public class LoginFragment extends BaseFragment {
         titleBar.setBackgroundColor(Color.TRANSPARENT);
         titleBar.setTitle("");
         titleBar.setLeftImageDrawable(ResUtils.getVectorDrawable(getContext(), R.drawable.ic_login_close));
-        titleBar.setActionTextColor(ThemeUtils.resolveColor(getContext(), R.attr.colorAccent));
+        titleBar.setActionTextColor(ThemeUtils.resolveColor(getContext(), com.xuexiang.xui.R.attr.colorAccent));
         titleBar.addAction(new TitleBar.TextAction(R.string.title_jump_login) {
             @Override
             public void performAction(View view) {
@@ -91,6 +93,11 @@ public class LoginFragment extends BaseFragment {
             }
         });
         return titleBar;
+    }
+
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
     }
 
     @Override

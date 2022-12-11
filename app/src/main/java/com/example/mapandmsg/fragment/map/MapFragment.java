@@ -53,25 +53,25 @@ import com.amap.api.services.core.PoiItem;
 import com.amap.api.services.route.WalkPath;
 import com.amap.api.services.route.WalkRouteResult;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.activity.SearchViewActivity;
-import com.xuexiang.mapandmsg.amap.MyNowPosition;
-import com.xuexiang.mapandmsg.amap.entity.PositionEntity;
-import com.xuexiang.mapandmsg.amap.overlay.WalkRouteOverlay;
-import com.xuexiang.mapandmsg.amap.task.LocationTask;
-import com.xuexiang.mapandmsg.amap.task.OnLocationGetListener;
-import com.xuexiang.mapandmsg.amap.task.RegeocodeTask;
-import com.xuexiang.mapandmsg.amap.task.WalkRouteTask;
-import com.xuexiang.mapandmsg.amap.util.AMapUtil;
-import com.xuexiang.mapandmsg.core.BaseFragment;
-import com.xuexiang.mapandmsg.fragment.CallBack;
-import com.xuexiang.mapandmsg.fragment.Thread.ThreadPool;
-import com.xuexiang.mapandmsg.fragment.newInfo.NewInfoReleaseFragment;
-import com.xuexiang.mapandmsg.fragment.newInfo.ShowNewInfoFragment;
-import com.xuexiang.mapandmsg.fragment.newInfo.task.NewInfoTask;
-import com.xuexiang.mapandmsg.leancloud.Push;
-import com.xuexiang.mapandmsg.utils.XToastUtils;
-import com.xuexiang.mapandmsg.widget.EditSpinnerDialog;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.activity.SearchViewActivity;
+import com.example.mapandmsg.amap.MyNowPosition;
+import com.example.mapandmsg.amap.entity.PositionEntity;
+import com.example.mapandmsg.amap.overlay.WalkRouteOverlay;
+import com.example.mapandmsg.amap.task.LocationTask;
+import com.example.mapandmsg.amap.task.OnLocationGetListener;
+import com.example.mapandmsg.amap.task.RegeocodeTask;
+import com.example.mapandmsg.amap.task.WalkRouteTask;
+import com.example.mapandmsg.amap.util.AMapUtil;
+import com.example.mapandmsg.core.BaseFragment;
+import com.example.mapandmsg.fragment.CallBack;
+import com.example.mapandmsg.fragment.Thread.ThreadPool;
+import com.example.mapandmsg.fragment.newInfo.NewInfoReleaseFragment;
+import com.example.mapandmsg.fragment.newInfo.ShowNewInfoFragment;
+import com.example.mapandmsg.fragment.newInfo.task.NewInfoTask;
+import com.example.mapandmsg.leancloud.Push;
+import com.example.mapandmsg.utils.XToastUtils;
+import com.example.mapandmsg.widget.EditSpinnerDialog;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xpage.enums.CoreAnim;
 import com.xuexiang.xui.utils.ResUtils;
@@ -172,6 +172,11 @@ public class MapFragment extends BaseFragment implements OnLocationGetListener,
     @Override
     protected int getLayoutId() {
         return R.layout.fragment_map;
+    }
+
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
     }
 
     /**

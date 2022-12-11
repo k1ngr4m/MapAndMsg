@@ -19,15 +19,15 @@ package com.example.mapandmsg.activity;
 
 import android.view.KeyEvent;
 
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.utils.SettingUtils;
-import com.xuexiang.mapandmsg.utils.Utils;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.utils.SettingUtils;
+import com.example.mapandmsg.utils.Utils;
 import com.xuexiang.xui.utils.KeyboardUtils;
 import com.xuexiang.xui.widget.activity.BaseSplashActivity;
 import com.xuexiang.xutil.app.ActivityUtils;
 
 import cn.leancloud.AVUser;
-import me.jessyan.autosize.internal.CancelAdapt;
+    import me.jessyan.autosize.internal.CancelAdapt;
 
 /**
  * 启动页【无需适配屏幕大小】

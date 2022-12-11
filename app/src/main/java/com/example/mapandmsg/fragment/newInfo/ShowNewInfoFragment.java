@@ -23,7 +23,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -33,11 +35,11 @@ import com.amap.api.services.core.LatLonPoint;
 import com.amap.api.services.core.PoiItem;
 import com.luck.picture.lib.PictureSelector;
 import com.luck.picture.lib.entity.LocalMedia;
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.adapter.pictureselector.ImageSelectGridAdapter;
-import com.xuexiang.mapandmsg.fragment.CallBack;
-import com.xuexiang.mapandmsg.fragment.newInfo.task.NewInfoTask;
-import com.xuexiang.mapandmsg.utils.XToastUtils;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.adapter.pictureselector.ImageSelectGridAdapter;
+import com.example.mapandmsg.fragment.CallBack;
+import com.example.mapandmsg.fragment.newInfo.task.NewInfoTask;
+import com.example.mapandmsg.utils.XToastUtils;
 import com.xuexiang.xaop.annotation.SingleClick;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xpage.base.XPageFragment;
@@ -110,9 +112,14 @@ public class ShowNewInfoFragment extends XPageFragment {
     };
     private PoiItem item;
 
-    @Override
-    protected int getLayoutId() {
+//    @Override
+    private int getLayoutId() {
         return R.layout.fragment_show_new_info;
+    }
+
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
     }
 
     @Override

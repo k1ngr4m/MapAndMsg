@@ -22,17 +22,20 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.luck.picture.lib.PictureSelector;
 import com.luck.picture.lib.config.PictureConfig;
 import com.luck.picture.lib.entity.LocalMedia;
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.core.BaseFragment;
-import com.xuexiang.mapandmsg.fragment.AboutFragment;
-import com.xuexiang.mapandmsg.fragment.CallBack;
-import com.xuexiang.mapandmsg.fragment.SettingsFragment;
-import com.xuexiang.mapandmsg.utils.Utils;
-import com.xuexiang.mapandmsg.utils.XToastUtils;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.core.BaseFragment;
+import com.example.mapandmsg.fragment.AboutFragment;
+import com.example.mapandmsg.fragment.CallBack;
+import com.example.mapandmsg.fragment.SettingsFragment;
+import com.example.mapandmsg.utils.Utils;
+import com.example.mapandmsg.utils.XToastUtils;
 import com.xuexiang.rxutil2.rxjava.RxJavaUtils;
 import com.xuexiang.xaop.annotation.SingleClick;
 import com.xuexiang.xpage.annotation.Page;
@@ -111,6 +114,11 @@ public class ProfileFragment extends BaseFragment implements SuperTextView.OnSup
         return R.layout.fragment_profile;
     }
 
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
+    }
+
     /**
      * 初始化控件
      */
@@ -180,7 +188,7 @@ public class ProfileFragment extends BaseFragment implements SuperTextView.OnSup
                 if (file != null) {
                     String uri = file.getUrl();
                     ImageLoader.get().loadImage(rivHeadPic, uri, ResUtils.getDrawable(
-                            R.drawable.xui_ic_default_img), DiskCacheStrategyEnum.AUTOMATIC);
+                            R.drawable.xui_ic_default_img), DiskCacheStrategyEnum.AUTOMATIC); // 哈奇
                     Log.e("tag:main","file is null");
                 }
             }

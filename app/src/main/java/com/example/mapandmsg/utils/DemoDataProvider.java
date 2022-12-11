@@ -103,7 +103,7 @@ public class DemoDataProvider {
     }
 
     public static List<AdapterItem> getGridItems(Context context) {
-        return getGridItems(context, R.array.grid_titles_entry, R.array.grid_icons_entry);
+        return getGridItems(context, R.array.grid_titles_entry, R.array.grid_titles_entry);
     }
 
 

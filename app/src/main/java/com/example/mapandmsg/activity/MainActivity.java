@@ -106,7 +106,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,
     private TextView tvAvatar;
     private TextView tvSign;
 
-    @Override
+//    @Override
     protected int getLayoutId() {
         return R.layout.activity_main;
     }
@@ -180,7 +180,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,
     }
 
     private void initViews() {
-        mTitles = ResUtils.getStringArray(R.array.home_titles);
+        mTitles = ResUtils.getStringArray(R.array.grid_titles_entry);
         toolbar.setTitle(mTitles[0]);
         toolbar.inflateMenu(R.menu.menu_main);
         toolbar.setOnMenuItemClickListener(this);
@@ -283,17 +283,17 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,
         tvAvatar = headerView.findViewById(R.id.tv_avatar);
         tvSign = headerView.findViewById(R.id.tv_sign);
 
-        if (Utils.isColorDark(ThemeUtils.resolveColor(this, R.attr.colorAccent))) {
+        if (Utils.isColorDark(ThemeUtils.resolveColor(this, com.xuexiang.xui.R.attr.colorAccent))) {
             tvAvatar.setTextColor(Colors.WHITE);
             tvSign.setTextColor(Colors.WHITE);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                ivAvatar.setImageTintList(ResUtils.getColors(R.color.xui_config_color_white));
+                ivAvatar.setImageTintList(ResUtils.getColors(com.xuexiang.xui.R.color.xui_config_color_white));
             }
         } else {
-            tvAvatar.setTextColor(ThemeUtils.resolveColor(this, R.attr.xui_config_color_title_text));
-            tvSign.setTextColor(ThemeUtils.resolveColor(this, R.attr.xui_config_color_explain_text));
+            tvAvatar.setTextColor(ThemeUtils.resolveColor(this, com.xuexiang.xui.R.attr.xui_config_color_title_text));
+            tvSign.setTextColor(ThemeUtils.resolveColor(this, com.xuexiang.xui.R.attr.xui_config_color_explain_text));
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                ivAvatar.setImageTintList(ResUtils.getColors(R.color.xui_config_color_gray_3));
+                ivAvatar.setImageTintList(ResUtils.getColors(com.xuexiang.xui.R.color.xui_config_color_gray_3));
             }
         }
 

@@ -23,7 +23,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -32,15 +34,15 @@ import com.amap.api.maps.model.LatLng;
 import com.luck.picture.lib.PictureSelector;
 import com.luck.picture.lib.config.PictureConfig;
 import com.luck.picture.lib.entity.LocalMedia;
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.activity.MainActivity;
-import com.xuexiang.mapandmsg.adapter.pictureselector.ImageSelectGridAdapter;
-import com.xuexiang.mapandmsg.fragment.CallBack;
-import com.xuexiang.mapandmsg.fragment.newInfo.task.NewInfoTask;
-import com.xuexiang.mapandmsg.leancloud.Push;
-import com.xuexiang.mapandmsg.notification.Note;
-import com.xuexiang.mapandmsg.utils.Utils;
-import com.xuexiang.mapandmsg.utils.XToastUtils;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.activity.MainActivity;
+import com.example.mapandmsg.adapter.pictureselector.ImageSelectGridAdapter;
+import com.example.mapandmsg.fragment.CallBack;
+import com.example.mapandmsg.fragment.newInfo.task.NewInfoTask;
+import com.example.mapandmsg.leancloud.Push;
+import com.example.mapandmsg.notification.Note;
+import com.example.mapandmsg.utils.Utils;
+import com.example.mapandmsg.utils.XToastUtils;
 import com.xuexiang.rxutil2.rxjava.RxJavaUtils;
 import com.xuexiang.xaop.annotation.SingleClick;
 import com.xuexiang.xpage.annotation.Page;
@@ -118,8 +120,13 @@ public class NewInfoReleaseFragment extends XPageFragment implements ImageSelect
     AVUser user = AVUser.getCurrentUser();
 
     @Override
-    protected int getLayoutId() {
+    public int getLayoutId() {
         return R.layout.fragment_news_release;
+    }
+
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
     }
 
     @Override
@@ -156,7 +163,7 @@ public class NewInfoReleaseFragment extends XPageFragment implements ImageSelect
                 .themeStyle(R.style.XUIPictureStyle)
                 .openExternalPreview(position, mSelectList));
 
-        mLoadingDialog = WidgetUtils.getLoadingDialog(Objects.requireNonNull(getContext()))
+        mLoadingDialog = WidgetUtils.getLoadingDialog(requireContext())
                 .setLoadingIcon(R.drawable.ic_baseline_message_24)
                 .setIconScale(0.4F)
                 .setLoadingSpeed(8);
@@ -260,7 +267,7 @@ public class NewInfoReleaseFragment extends XPageFragment implements ImageSelect
                                      * @param cla        设置单击后跳转的 页面
                                      * @return 返回 通知类
                                      */
-                                    .sendingNotice(R.mipmap.ic_app1,
+                                    .sendingNotice(R.mipmap.ic_launcher,
                                             AVOSCloud.getContext().getResources().getString(R.string.app_name),
                                             "有新的消息发布！点击打开应用查看。", 0, true, true, MainActivity.class);
                             //结束上传数据dialog

@@ -2,12 +2,14 @@
 
 package com.example.mapandmsg.fragment.profile;
 
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
-import com.xuexiang.mapandmsg.R;
-import com.xuexiang.mapandmsg.core.BaseFragment;
-import com.xuexiang.mapandmsg.fragment.CallBack;
-import com.xuexiang.mapandmsg.utils.XToastUtils;
+import com.example.mapandmsg.R;
+import com.example.mapandmsg.core.BaseFragment;
+import com.example.mapandmsg.fragment.CallBack;
+import com.example.mapandmsg.utils.XToastUtils;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xui.widget.actionbar.TitleBar;
 import com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText;
@@ -86,6 +88,11 @@ public class ModifyNameFragment extends BaseFragment {
     @Override
     protected int getLayoutId() {
         return R.layout.fragment_modify_name;
+    }
+
+    @Override
+    protected View inflateView(LayoutInflater inflater, ViewGroup container) {
+        return null;
     }
 
     @Override

@@ -17,7 +17,7 @@
 
 package com.example.mapandmsg.fragment.newInfo.task;
 
-import com.xuexiang.mapandmsg.adapter.entity.NewInfo;
+import com.example.mapandmsg.adapter.entity.NewInfo;
 
 /**
  * @ClassName: NewsReleaseTask
