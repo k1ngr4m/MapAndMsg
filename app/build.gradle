@@ -110,7 +110,7 @@ dependencies {
     implementation 'com.tencent:mmkv:1.0.22'
 
 
-    implementation 'com.alibaba:fastjson:1.1.70.android'
+    implementation 'com.alibaba:fastjson:1.2.75'
     implementation 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
 
     //PictureSelector图片选择
@@ -121,12 +121,15 @@ dependencies {
     //悬浮按钮
     implementation 'com.github.clans:fab:1.6.4'
 
-    //3D地图so及jar
-    implementation 'com.amap.api:3dmap:latest.integration'
-    //搜索功能
+//    //3D地图so及jar
+//    implementation 'com.amap.api:3dmap:latest.integration'
+//    //搜索功能
     implementation 'com.amap.api:search:latest.integration'
-    //定位功能
-    implementation 'com.amap.api:location:latest.integration'
+//    //定位功能
+//    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.amap.api:map2d:6.0.0'
+    implementation 'com.amap.api:3dmap:9.2.1'
+    implementation 'com.amap.api:location:6.1.0'
 
     // alibaba
     implementation 'com.alibaba.android:vlayout:1.2.36'
@@ -145,9 +148,9 @@ dependencies {
     implementation 'com.github.xuexiangjys.SmartRefreshLayout:refresh-layout:1.1.5'
 
     // com.just
-    implementation 'com.github.Justson.AgentWeb:agentweb-core:v5.0.6-androidx' // (必选)
-    implementation 'com.github.Justson.AgentWeb:agentweb-filechooser:v5.0.6-androidx' // (可选)
-    implementation 'com.github.Justson:Downloader:v5.0.4-androidx'
+//    implementation 'com.github.Justson.AgentWeb:agentweb-core:v5.0.6-androidx' // (必选)
+//    implementation 'com.github.Justson.AgentWeb:agentweb-filechooser:v5.0.6-androidx' // (可选)
+//    implementation 'com.github.Justson:Downloader:v5.0.4-androidx'
 
     // webviw
     implementation 'com.github.xuexiangjys.AgentWeb:agentweb-core:1.0.0'

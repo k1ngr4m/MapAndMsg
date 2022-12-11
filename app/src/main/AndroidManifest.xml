@@ -24,10 +24,10 @@
         android:name="com.example.mapandmsg.MyApplication"
         android:allowBackup="false"
         android:configChanges="screenSize|keyboardHidden|orientation|keyboard"
-        android:icon="@mipmap/ic_app1"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
-        android:roundIcon="@mipmap/ic_app1"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:windowSoftInputMode="adjustPan|stateHidden"
@@ -39,7 +39,8 @@
             android:configChanges="screenSize|keyboardHidden|orientation|keyboard"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Launch.App"
-            android:windowSoftInputMode="adjustPan|stateHidden">
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,7 +65,8 @@
             android:configChanges="screenSize|keyboardHidden|orientation|keyboard"
             android:hardwareAccelerated="true"
             android:label="@string/app_browser_name"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:exported="true">
             <!-- Scheme -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -151,7 +153,8 @@
         <!-- 即时通讯和推送 START -->
         <!-- 即时通讯和推送都需要 PushService -->
         <service android:name="cn.leancloud.push.PushService"/>
-        <receiver android:name="cn.leancloud.push.AVBroadcastReceiver">
+        <receiver android:name="cn.leancloud.push.AVBroadcastReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.USER_PRESENT"/>
@@ -160,7 +163,8 @@
             </intent-filter>
         </receiver>
         <!-- 即时通讯和推送 END -->
-        <receiver android:name="com.example.mapandmsg.broadcastreceiver.CustomReceiver" >
+        <receiver android:name="com.example.mapandmsg.broadcastreceiver.CustomReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.USER_PRESENT" />
